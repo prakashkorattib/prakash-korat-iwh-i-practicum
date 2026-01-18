@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title= title
+  body
+    h1 Custom Object Records
+
+    a(href='/update-cobj') Add/Update to this table
+    hr
+
+    table(border='1' cellpadding='8')
+      thead
+        tr
+          th Name
+          th Species
+          th Age
+      tbody
+        each pet in pets
+          tr
+            td= pet.properties.name
+            td= pet.properties.species
+            td= pet.properties.age
